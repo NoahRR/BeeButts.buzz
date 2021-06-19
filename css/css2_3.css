@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Gothic A1';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/CSR94z5ZnPydRjlCCwl6bA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Gothic A1';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/CSR44z5ZnPydRjlCCwlCmOQKSA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Gothic A1';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/CSR44z5ZnPydRjlCCwlC0OIKSA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Gothic A1';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(../fonts/CSR44z5ZnPydRjlCCwlC6OAKSA.ttf) format('truetype');
+}
