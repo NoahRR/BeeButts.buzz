@@ -25868,7 +25868,26 @@ img.spin {
   transition: all .3s;
 }
 .my-btn-style:hover {
+  background-color: #ffbf00 !important;
+  color: black;
+}
+.my-btn-style-invert {
+  padding: 0;
+  height: auto;
+  width: auto;
+  border-radius: 8px;
+  display: inline;
+  outline: none !important;
+  border: none;
+  margin-left: 15px;
   background-color: #ffbf00;
+  font-size: 16px;
+  background-color: transparent !important;
+  color: black;
+  z-index: 10;
+  transition: all .3s;
+}
+.my-btn-style-invert:hover {
   color: black;
 }
 .custom_background {
