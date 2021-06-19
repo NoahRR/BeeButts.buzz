@@ -1,50 +1,4 @@
-/*------------------------------------------------------------------
-[Master Stylesheet]
--------------------------------------------------------------------
-Theme Name:     Shade - Premium Landing Page Template
-Theme URL:      https://finestdevs.com/shade/
-Author:         FinestDevs
-Version:        1.0
-Last change:    April 26, 2021
-Description:    High Converting Landing Pages for Startups
-Support:        https://finestdevs.com/product-support/
--------------------------------------------------------------------*/
 
-/*********** CSS TABLE OF CONTENTS *******************
-
-|--- 01.Component -> { Header }
-|--- 02.Component -> { Menu }
-|--- 03.Component -> { Button }
-|--- 04.Component -> { Form }
-|--- 05.Component -> { Cards }
-|--- 06.Component -> { Section Heading }
-|--- 07.Component -> { Search Form }
-|--- 08.Component -> { FAQ }
-
-
-|--- THEME CUSTOM STYLES
-
-|--- 01.sections -> { Hero Area }
-|--- 02.sections -> { Service }
-|--- 03.sections -> { Feature }
-|--- 04.sections -> { Content }
-|--- 05.sections -> { Brand }
-|--- 06.sections -> { Pricing }
-|--- 07.sections -> { Footer }
-|--- 08.sections -> { Testimonial }
-|--- 09.sections -> { How It Works }
-|--- 10.sections -> { CTA }
-|--- 11.sections -> { Blog }
-|--- 12.sections -> { Contact }
-|--- 13.sections -> { About Us }
-|--- 14.sections -> { Career }
-|--- 15.sections -> { Case Details }
-|--- 16.sections -> { Shop page}
-|--- 17.sections -> { Inner pages}
-|--- 18.sections -> { Portfolio}
-
-******************************************************/
-/*=== Media Query ===*/
 body[data-theme='dark'], .dark-bg, .dark-mode-texts {
   --bg:                 #19191b;
   --bg-2:                 #19191b;
@@ -1533,7 +1487,6 @@ li.sub-menu--item.nav-item-has-children i {
   margin-bottom: 0;
 }
 
-/*Section heading style-3*/
 .section__heading-3 h2 {
   color: #1D263A;
   font-size: 34px !important;
@@ -6736,9 +6689,6 @@ li.sub-menu--item.nav-item-has-children i {
   }
 }
 
-/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>      
-   Content Area-L6 1
-        <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .content-area-l6-3 {
   padding-bottom: 50px;
 }
@@ -25888,4 +25838,45 @@ img.spin {
   filter: brightness(0.7);
 }
 
-/*# sourceMappingURL=maps/main.css.map */
+
+/* NEW STUFF */
+* {
+  font-family: 'Heebo', sans-serif;
+}
+.header-vert-center {
+  margin-top: 40px !important;
+  transform: translateY(-50%);
+  margin: 0 50px;
+}
+.my-btn-style {
+  padding: 12.5px 20px;
+  height: auto;
+  width: auto;
+  border-radius: 8px;
+  display: inline;
+  outline: none !important;
+  border: none;
+  margin-left: 15px;
+  background-color: #FFD65F;
+
+  font-size: 16px;
+
+  background-color: rgb(24, 24, 24);
+  /* background-color: #e05718; */
+  color: white;
+  z-index: 10;
+  transition: all .3s;
+}
+.my-btn-style:hover {
+  background-color: #ffbf00;
+  color: black;
+}
+.custom_background {
+  height: 100vh;
+  background-color: #FFD65F;
+  background-color: #FFE28D;
+}
+.new-font-color {
+  color: rgb(24, 24, 24) !important;
+  user-select: none;
+}
