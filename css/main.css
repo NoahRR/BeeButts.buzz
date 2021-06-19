@@ -25865,7 +25865,7 @@ img.spin {
   /* background-color: #e05718; */
   color: white;
   z-index: 10;
-  transition: all .3s;
+  transition: background-color .3s, color .3s;
 }
 .my-btn-style:hover {
   background-color: #ffbf00 !important;
@@ -25885,10 +25885,10 @@ img.spin {
   background-color: transparent !important;
   color: black;
   z-index: 10;
-  transition: all .3s;
+  transition: color .1s;
 }
 .my-btn-style-invert:hover {
-  color: black;
+  color: orange;
 }
 .custom_background {
   height: 100vh;
