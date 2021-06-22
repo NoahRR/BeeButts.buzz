@@ -56,7 +56,7 @@ background: linear-gradient(to bottom right, #FFE38D, #FFD152); */
   
     font-size: 16px;
   
-    background-color: rgb(24, 24, 24);
+    background-color: rgb(24, 24, 24) !important;
     /* background-color: #e05718; */
     color: white !important;
     z-index: 10;
@@ -93,13 +93,13 @@ background: linear-gradient(to bottom right, #FFE38D, #FFD152); */
 
 .custom-error-msg-orange {
     display: none;
-    margin-top: -42px;
+    margin-top: -40px;
     color: orange !important;
     font-weight: 700;
 }
 .custom-error-msg-red {
     display: none;
-    margin-top: -42px;
+    margin-top: -40px;
     color: rgb(255, 56, 56) !important;
     font-weight: 700;
 }
@@ -133,7 +133,21 @@ background: linear-gradient(to bottom right, #FFE38D, #FFD152); */
     to { -webkit-transform: rotate(360deg); }
 }
 
-.no-hover-btn:hover {
+.my-btn-style-load {
+    padding: 10.5px 20px;
+    height: auto;
+    width: auto;
+    border-radius: 8px;
+    display: inline;
+    outline: none !important;
+    border: none;
+    margin-left: 15px;
+    background-color: #FFD65F;
+    font-size: 16px;
     background-color: rgb(24, 24, 24) !important;
-    color: white !important;
+    color: rgb(24, 24, 24) !important;
+}
+my-btn-style-load:hover {
+    background-color: rgb(24, 24, 24) !important;
+    color: rgb(24, 24, 24) !important;
 }
