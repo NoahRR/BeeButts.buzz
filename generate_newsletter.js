@@ -1,11 +1,12 @@
 const fetch = require('node-fetch');
 
-fetch('https://www.reddit.com/r/beebutts/top/.json?limit=6')
+fetch('https://www.reddit.com/r/beebutts/top/.json?limit=10&t=week')
   .then(response => response.json())
   .then(
       data => {
 
         data['data']['children'].forEach(element => {
+            // console.log(element['data'])
             console.log(element['data']['subreddit_name_prefixed'])
             console.log(element['data']['title'])
             console.log(element['data']['url_overridden_by_dest'])
