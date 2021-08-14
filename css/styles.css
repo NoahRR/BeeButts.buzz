@@ -177,6 +177,11 @@ background: linear-gradient(to bottom right, #FFE38D, #FFD152); */
 }
 
 /* MEDIA QUERIES */
+@media only screen and (min-width: 1400px) {
+    #desktop-blob-main {
+        right: -120px !important;
+    }
+}
 @media only screen and (min-width: 993px) {
     .mobile-only {
         display: none;
