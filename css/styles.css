@@ -187,54 +187,15 @@ background: linear-gradient(to bottom right, #FFE38D, #FFD152); */
         display: none;
     }
 }
-/* @media only screen and (max-width: 480px) {
-    .mobile-only {
-        display: none;
-    }
-    #main-content {
-        padding-right: 35px !important;
-        padding-left: 55px !important;
-    }
-    .big-left-col {
-        font-size: 15px;
-    }
-}
-@media only screen and (max-width: 410px) {
-    #main-content {
-        padding-right: 15px !important;
-        padding-left: 35px !important;
-    }
-    .big-left-col {
-        font-size: 14px;
-    }
-    .mc-field-group {
-        font-size: 12px;
-    }
-    #mc-embedded-subscribe {
-        font-size: 12px !important;
-    }
-}
-@media only screen and (max-width: 380px) {
-    #main-content {
-        padding-right: 10px !important;
-        padding-left: 30px !important;
-    }
-    .big-left-col {
-        font-size: 13px;
-    }
-    .mc-field-group {
-        font-size: 12px;
-    }
-    #mc-embedded-subscribe {
-        font-size: 12px !important;
-    }
-} */
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 480px) { /* DESKTOP DISPLAY */
     #mobile-view-main-content {
         display: none;
     }
+    .mailchimp_form_things {
+        margin-top: 0 !important;
+    }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) { /* START MOBILE DISPLAY */
     #main-content {
         display: none;
     }
@@ -247,6 +208,13 @@ background: linear-gradient(to bottom right, #FFE38D, #FFD152); */
     #check-out-my-other-work{
         float: left;
         display: none;
+    }
+    #loading {
+        margin-top: 24px;
+    }
+    .all-return-msg-mailchimp-submit {
+        margin-top: 15px !important;
+        margin-bottom: 0 !important;
     }
 }
 @media only screen and (max-width: 380px) {
@@ -270,6 +238,10 @@ background: linear-gradient(to bottom right, #FFE38D, #FFD152); */
     }
     #mobile-buzz-bee {
         margin-left: 20vw !important;
+    }
+    #loading {
+        margin-top: 78px;
+        margin-left: -50vw;
     }
 }
 @media only screen and (max-width: 330px) {
