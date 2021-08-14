@@ -34,12 +34,12 @@
   
   </head>
   
-  <body class="is-boxed has-animations is-loaded" data-theme-mode-panel-active data-theme="light" style="font-family: &#x27;Mazzard H&#x27;;" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+  <body class="is-boxed has-animations is-loaded" data-theme-mode-panel-active data-theme="light" style="font-family: Mazzard H;" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
     <div class="site-wrapper overflow-hidden position-relative">
   
       <header style="z-index: 999; position: absolute; height: 60px; width: 100vw; top: 0;">
-        <a href="https://noahrayroberts.com/" target="_blank"><button class="my-btn-style-invert header-vert-center" style="float: right; font-size: 13px;">Check out my other work <svg style="height: 17px; display: inline; padding-bottom: 1.5px;" fill="" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" /><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" /></svg></button></a>
-        <a href="https://beebutts.buzz/" style="text-decoration: none; width: 100px; float: left;"><div class="header-vert-center" style="width: 100px; font-weight: 700;">BeeButts.buzz</div></a>
+        <a id="check-out-my-other-work" href="https://noahrayroberts.com/" target="_blank"><button class="my-btn-style-invert header-vert-center" style="float: right; font-size: 13px;">Check out my other work <svg style="height: 17px; display: inline; padding-bottom: 1.5px;" fill="" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" /><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" /></svg></button></a>
+        <a href="https://beebutts.buzz/" style="text-decoration: none; width: 100px; float: left;" id="top-header-home-link"><div class="header-vert-center" style="width: 100px; font-weight: 700;">BeeButts.buzz</div></a>
       </header>
   
       <div class="hero-area-l1  position-relative background-property custom_background whole-page">
@@ -48,8 +48,59 @@
 
             <!-- <div style="height: 330px; width: 600px; background-color: #fff5da; position: absolute; margin-top: 335px; border-radius: 20px; margin-left: -10px;"></div> -->
 
-            <div class="col-xxl-5 col-xl-6 col-lg-6 col-md-10 order-lg-1 order-1 aos-init aos-animate" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000" style="width: 460px; padding-left: 55px;">
+            <!-- MOBILE VIEW MAIN CONTENT -->
+            <div id="mobile-view-main-content">
+                <h1 class="mobile-header-titles" style="display: block; float: left;">BeeButts</h1>
+                <h1 class="mobile-header-titles" style="display: block; float: right; color: orange !important;">.buzz</h1>
+
+                <img id="mobile-buzz-bee" class="mobile-only" style="height: 115px; position: absolute; margin-left: 40vw; margin-top: -130px; user-select: none; cursor: pointer; transform: rotate(-12deg) !important; z-index: -100 !important;" src="images/bee-official-path.png" alt="image">
+
+                <p id="mobile-main-content-text" style="line-height: 19px !important; font-size: .80em; margin-top: 150px; width: 80%; width: 317px; background-color: #FFF0C5; padding: 16px 20px 15px 20px; border-radius: 6px; margin-bottom: 0px;">Signup to get <asdf style="height: 5px; line-height: 5px; background-color: #ffbf00; padding: 0 2px; font-size: 1em; line-height: 19px !important;">wholesome vibes</asdf> sent to your inbox every monday morning. <b style="font-weight: 600; font-size: 1em; line-height: 19px !important;">Start your week off with a smile.</b></p>
+
+                <!-- Begin Mailchimp Signup Form -->
+                <div id="mc_embed_signup">
+                  <form action="https://buzz.us6.list-manage.com/subscribe/post-json?u=dfc56e3d8beaa4ad068e9e5e1&amp;id=619c7f73dc&c=?" method="get" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="">
+                      <div id="mc_embed_signup_scroll" style="width: 317px;">
+
+                        <p class="custom-error-msg-green">Welcome to the hive! You should recieve a confirmation email shortly.</p>
+                        <p class="custom-error-msg-orange"></p>
+                        <p class="custom-error-msg-red"></p>
+
+                        <div class="mc-field-group">
+                          <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" style="float: left; user-select: none; display: inline; padding: 5px 15px; border-radius: 6px; outline: none; border: none; display: inline; font-size: 1em; margin-top: 15px; margin-right: 15px;" placeholder="email address">
+                        </div>
+
+                        <div id="mce-responses" class="clear">
+                          <div class="response" id="mce-error-response" style="display:none"></div>
+                          <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>
+                        
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_dfc56e3d8beaa4ad068e9e5e1_619c7f73dc" tabindex="-1" value=""></div>
+                        
+                      <div id="subscribe-btn-mobile-wrapper" class="clear" style="display: inline; float: left; font-size: 1em; margin-top: 15px;"><input type="submit" value="Sign Me Up!" name="subscribe" id="mc-embedded-subscribe" class="button my-btn-style" style="margin-left: 0;"></div>
+                      <div id="loading"></div>
+
+                      </div>
+                    </form>
+                  </div>
+                  <!--End mc_embed_signup-->
+
+                  <br><br><span id="mobile-cancel-anytime" class="new-font-color" style="display: block; margin-top: 5px; font-size: .75em !important;"><b style="font-weight: 600; font-size: 1em;">Free Forever.</b> Cancel Anytime.</span>
+
+                  <div class="image-3">
+                      <img id="mobile-honey-comb" class="mobile-only" style="height: 250px; margin-top: 15px; position: absolute; left: -20vw; opacity: .5; user-select: none;" src="images/honeycomb.png" alt="image">
+                  </div>
+
+            </div>
+
+            <!-- DESKTOP VIEW MAIN CONTENT -->
+            <div class="col-xxl-5 col-xl-6 col-lg-6 col-md-10 order-lg-1 order-1 aos-init aos-animate" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000" style="width: 460px; padding-left: 55px;" id="main-content">
               <div class="content big-left-col" style="margin-top: 280px; padding: 0;">
+
+                <div class="image-3">
+                    <img id="mobile-buzz-bee" class="mobile-only" style="height: 115px; position: absolute; margin-left: 40vw; margin-top: -130px; user-select: none; cursor: pointer; transform: rotate(-12deg) !important;" src="images/bee-official-path.png" alt="image">
+                </div>
   
                 <h2 class="new-font-color">Bee Butts <span style="font-size: .25em !important; font-weight: 300;" class="new-font-color">dot buzz</span> </h2>
 				  
@@ -76,7 +127,7 @@
                         <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                         <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_dfc56e3d8beaa4ad068e9e5e1_619c7f73dc" tabindex="-1" value=""></div>
                         
-                      <div class="clear" style="display: inline; float: left;"><input type="submit" value="Sign Me Up!" name="subscribe" id="mc-embedded-subscribe" class="button my-btn-style"></div>
+                      <div class="clear" style="display: inline; float: left; font-size: 1em;"><input type="submit" value="Sign Me Up!" name="subscribe" id="mc-embedded-subscribe" class="button my-btn-style"></div>
                       <div id="loading"></div>
 
                       </div>
@@ -156,11 +207,15 @@
                   </script>
                 
                 <br><span class="new-font-color" style="display: block; margin-top: 5px; font-size: .75em !important;"><b style="font-weight: 600; font-size: 1em;">Free Forever.</b> Cancel Anytime.</span>
+
+                <div class="image-3">
+                    <img id="mobile-honey-comb" class="mobile-only" style="height: 250px; position: absolute; left: -20vw; opacity: .5; user-select: none;" src="images/honeycomb.png" alt="image">
+                </div>
               
               </div>
             </div>
             
-            <div class="offset-xxl-2 col-xxl-5 offset-xl-1 col-xl-5 col-lg-6 col-md-8 order-lg-1 order-0 aos-init aos-animate" data-aos="fade-left" data-aos-delay="700" data-aos-duration="1000">
+            <div class="offset-xxl-2 col-xxl-5 offset-xl-1 col-xl-5 col-lg-6 col-md-8 order-lg-1 order-0 aos-init aos-animate" data-aos="fade-left" data-aos-delay="700" data-aos-duration="1000" id="example-newsletter-col">
               <div class="hero-image-group-l1" style="margin-left: 85px;">
   
                 <img class="hero-media-image" style="margin-top: 150px; margin-left: 55px; height: 500px; z-index: 10; background-color: white; object-fit: contain; user-select: none; cursor: pointer; border: 5px solid white;" src="images/example-newsletter-6.png" alt="Newsletter Image">
