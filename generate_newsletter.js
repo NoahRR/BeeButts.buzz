@@ -22,6 +22,8 @@ fetch('https://www.reddit.com/r/beebutts/top/.json?limit=10&t=week')
 // INSERT NEW DATA INTO HTML TEMPLATE
 // other option is to use mailchimp template - then we can define variables to pass in I believe.. in the docs https://mailchimp.com/developer/marketing/api/campaigns/ .. but prob just do this manually here - create enw file, from bee pro html export - then pass in variables with javascript, and then get the html, and input into api call.
 
+// WILL HAVE TO GENERATE NEW API KEY -- this one was disabled czu it was found online at beebutts github -- need to go and set this to private!!! or find a way to pass this in with .env or something
+
 // MAIL CHIMP CAMPAIGN CREATE, SET CONTENT, SEND
 const client = require('@mailchimp/mailchimp_marketing');
 
