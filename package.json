@@ -1,0 +1,24 @@
+{
+  "name": "beebutts.buzz",
+  "version": "1.0.0",
+  "description": "Newsletter program for Bee Butts",
+  "main": "generate_newsletter.js",
+  "dependencies": {
+    "@mailchimp/mailchimp_marketing": "^3.0.58",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoahRR/BeeButts.buzz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NoahRR/BeeButts.buzz/issues"
+  },
+  "homepage": "https://github.com/NoahRR/BeeButts.buzz#readme"
+}
