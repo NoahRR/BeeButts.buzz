@@ -8,11 +8,12 @@ require('dotenv').config();
 const fetch = require('node-fetch');
 var bee_data = [];
 
-fetch('https://www.reddit.com/r/beebutts/top/.json?limit=10&t=week')
+fetch('https://www.reddit.com/r/beebutts/top/.json?limit=25&t=week')
   .then(response => response.json())
   .then(
       data => {
 
+        added_counter = 0;
         data['data']['children'].forEach(element => {
             // console.log(element['data'])
             bee_post_data = {};
@@ -22,23 +23,31 @@ fetch('https://www.reddit.com/r/beebutts/top/.json?limit=10&t=week')
             bee_post_data['author'] = element['data']['author'];
             bee_post_data['image_url_2'] = element['data']['url'];
             bee_post_data['post_url'] = 'https:/www.reddit.com' + element['data']['permalink'];
-            bee_data.push(bee_post_data);
+
+            if ( bee_post_data['image_url'].slice(8)[0] == 'i' && added_counter < 10 ) {
+              bee_data.push(bee_post_data);
+              added_counter++;
+            }
         });
-        console.log(bee_data);
 
         // INSERT NEW DATA INTO HTML TEMPLATE
         const mustache   = require('mustache');
         const fs = require('fs'); 
 
         var content = fs.readFileSync("newletter_template.html","utf-8");
-        // var bee_data = {
-        //   formatted: {
-        //     latitude: 0,
-        //     longitude:0
-        //   },
-        //   formattedDate:"01/01/1990"
-        // }
-        // var new_newsletter_html = mustache.render(content, bee_data);
+        var data = {
+          "bee_data": bee_data
+        }
+
+        // final data here
+        var new_newsletter_html = mustache.render(content, data);
+
+        // write new content to test file to open and inspect
+        // fs.writeFile('test_output.html', new_newsletter_html, function (err, data) {
+        //     if (err) return console.log(err);
+        // });
+        // return;
+
         // end section
 
 
@@ -75,7 +84,7 @@ fetch('https://www.reddit.com/r/beebutts/top/.json?limit=10&t=week')
           new_campaign_id = response['id'];
 
           const response_set_content = await client.campaigns.setContent(new_campaign_id, {
-            html: content
+            html: new_newsletter_html
           });
 
           const response_send = await client.campaigns.send(new_campaign_id);

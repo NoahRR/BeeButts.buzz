@@ -5,6 +5,7 @@
   "main": "generate_newsletter.js",
   "dependencies": {
     "@mailchimp/mailchimp_marketing": "^3.0.58",
+    "bootstrap-icons": "^1.5.0",
     "dotenv": "^10.0.0",
     "mustache": "^4.2.0",
     "node-fetch": "^2.6.1"
