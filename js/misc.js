@@ -9,4 +9,8 @@ window.addEventListener('DOMContentLoaded',function(){
         document.querySelector('#desktop-blob-main').style.display = 'none';
     }
 
+    var ipad_or_not = navigator.userAgent.match(/iPad/i) != null;
+
+    alert(ipad_or_not);
+
 },false);
