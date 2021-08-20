@@ -5,8 +5,7 @@ window.addEventListener('DOMContentLoaded',function(){
     p = navigator.platform;
     if( p === 'iPad' ) {
         document.querySelector('#desktop-blob-main').style.display = 'none';
-    } else {
-        alert(p);
     }
+    alert(p);
 
 },false);
