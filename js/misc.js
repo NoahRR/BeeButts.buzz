@@ -11,6 +11,9 @@ window.addEventListener('DOMContentLoaded',function(){
 
     var ipad_or_not = navigator.userAgent.match(/iPad/i) != null;
 
-    alert(ipad_or_not);
+    const iPad = !!(navigator.userAgent.match(/(iPad)/)
+    || (navigator.platform === "MacIntel" && typeof navigator.standalone !== "undefined"))
+
+    alert(iPad);
 
 },false);
