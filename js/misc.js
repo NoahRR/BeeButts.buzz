@@ -4,9 +4,7 @@ window.addEventListener('DOMContentLoaded',function(){
     // hide blob if on ipad
     p = navigator.platform;
     if( p === 'iPad' ) {
-        alert('hi');
-    } else {
-        alert('no');
+        document.querySelector('#desktop-blob-main').style.display = 'none';
     }
 
 },false);
