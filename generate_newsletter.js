@@ -22,7 +22,7 @@ fetch('https://www.reddit.com/r/beebutts/top/.json?limit=25&t=week')
             bee_post_data['image_url'] = element['data']['url_overridden_by_dest'];
             bee_post_data['author'] = element['data']['author'];
             bee_post_data['image_url_2'] = element['data']['url'];
-            bee_post_data['post_url'] = 'https:/www.reddit.com' + element['data']['permalink'];
+            bee_post_data['post_url'] = 'https://www.reddit.com' + element['data']['permalink'];
 
             if ( bee_post_data['image_url'].slice(8)[0] == 'i' && added_counter < 10 ) {
               bee_data.push(bee_post_data);
