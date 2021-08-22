@@ -41,11 +41,13 @@ fetch('https://www.reddit.com/r/beebutts/top/.json?limit=25&t=week')
 
         // final data here
         var new_newsletter_html = mustache.render(content, data);
+        var stringRegToReplace = new RegExp('&#x2F;', 'g');
+        var new_newsletter_html = new_newsletter_html.replace(stringRegToReplace, '/');
 
         // write new content to test file to open and inspect
-        // fs.writeFile('test_output.html', new_newsletter_html, function (err, data) {
-        //     if (err) return console.log(err);
-        // });
+        fs.writeFile('weekly_newsletter_web.html', new_newsletter_html, function (err, data) {
+            if (err) return console.log(err);
+        });
         // return;
 
         // end section
@@ -76,7 +78,7 @@ fetch('https://www.reddit.com/r/beebutts/top/.json?limit=25&t=week')
                 subject_line: "Your weekly good vibes have arrived!!",
                 preview_text: "Bzz Bzzt! Open me to view bee butts :D",
                 from_name: "The Bee Butts Group",
-                reply_to: "noah@beebutts.buzz"
+                reply_to: "newsletter@beebutts.buzz"
               },
             }
           );
