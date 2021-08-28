@@ -24,9 +24,17 @@ fetch('https://www.reddit.com/r/beebutts/top/.json?limit=25&t=week')
             bee_post_data['image_url_2'] = element['data']['url'];
             bee_post_data['post_url'] = 'https://www.reddit.com' + element['data']['permalink'];
 
-            if ( bee_post_data['image_url'].slice(8)[0] == 'i' && added_counter < 10 ) {
-              bee_data.push(bee_post_data);
-              added_counter++;
+            // ensure media link is image & from reddit
+            if (bee_post_data['image_url'] && bee_post_data['image_url'] != '') {
+              if ( bee_post_data['image_url'].slice(8)[0] == 'i' && bee_post_data['image_url'].slice(8)[1] == '.' && added_counter < 10 ) {
+                bee_data.push(bee_post_data);
+                added_counter++;
+              }
+            } else if (bee_post_data['image_url_2'] && bee_post_data['image_url_2'] != '') {
+              if ( bee_post_data['image_url_2'].slice(8)[0] == 'i' && bee_post_data['image_url_2'].slice(8)[1] == '.' && added_counter < 10 ) {
+                bee_data.push(bee_post_data);
+                added_counter++;
+              }
             }
         });
 
@@ -48,7 +56,7 @@ fetch('https://www.reddit.com/r/beebutts/top/.json?limit=25&t=week')
         fs.writeFile('weekly_newsletter_web.html', new_newsletter_html, function (err, data) {
             if (err) return console.log(err);
         });
-        // return;
+        return;
 
         // end section
 
