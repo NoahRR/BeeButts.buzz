@@ -53,10 +53,10 @@ fetch('https://www.reddit.com/r/beebutts/top/.json?limit=25&t=week')
         var new_newsletter_html = new_newsletter_html.replace(stringRegToReplace, '/');
 
         // write new content to test file to open and inspect
-        fs.writeFile('weekly_newsletter_web.html', new_newsletter_html, function (err, data) {
-            if (err) return console.log(err);
-        });
-        return;
+        // fs.writeFile('weekly_newsletter_web.html', new_newsletter_html, function (err, data) {
+        //     if (err) return console.log(err);
+        // });
+        // return;
 
         // end section
 
