@@ -8,7 +8,7 @@ require('dotenv').config();
 const fetch = require('node-fetch');
 var bee_data = [];
 
-fetch('https://www.reddit.com/r/beebutts/top/.json?limit=25&t=week')
+fetch('https://www.reddit.com/r/beebutts/top/.json?limit=100&t=week')
   .then(response => response.json())
   .then(
       data => {
