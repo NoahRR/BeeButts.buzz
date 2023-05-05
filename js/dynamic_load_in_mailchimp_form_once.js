@@ -31,5 +31,7 @@ window.addEventListener('DOMContentLoaded',function(){
     set_correct_mail_chimp_form();
 },false);
 
-// ON BROWSER RESIZE
-window.onresize = set_correct_mail_chimp_form;
+// ON BROWSER RESIZE - only if not on android - causes keyboard issues
+if (!/Android/i.test(navigator.userAgent)) {
+	window.onresize = set_correct_mail_chimp_form;
+}
